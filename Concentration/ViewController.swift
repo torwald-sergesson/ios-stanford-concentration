@@ -11,7 +11,11 @@ import UIKit
 class ViewController: UIViewController
 {
 
-    var flipCount = 0
+    var flipCount = 0 {
+        didSet {
+            flipCountLabel.text = "Flips: \(flipCount)"
+        }
+    }
     
     @IBOutlet weak var flipCountLabel: UILabel!
 
@@ -24,12 +28,11 @@ class ViewController: UIViewController
     }
     
     func flipCard(withEmoji emoji: String, on button: UIButton) {
-        flipCount += 1
-        flipCountLabel.text = "Flips: \(flipCount)"
         if (button.currentTitle == emoji) {
             button.setTitle("", for: UIControl.State.normal)
             button.backgroundColor = UIColor.orange
         } else {
+            flipCount += 1
             button.setTitle(emoji, for: UIControl.State.normal)
             button.backgroundColor = UIColor.white
         }
