@@ -19,12 +19,10 @@ class ViewController: UIViewController
     
     @IBOutlet weak var flipCountLabel: UILabel!
 
+    @IBOutlet var cardButtons: [UIButton]!
+    
     @IBAction func touchCard(_ sender: UIButton) {
         flipCard(withEmoji: "☆", on: sender)
-    }
-
-    @IBAction func touchSecondCard(_ sender: UIButton) {
-        flipCard(withEmoji: "☪︎", on: sender)
     }
     
     func flipCard(withEmoji emoji: String, on button: UIButton) {
