@@ -57,11 +57,19 @@
 				4B708F19217A045D002B3B6C /* AppDelegate.swift */,
 				4B708F1B217A045D002B3B6C /* ViewController.swift */,
 				4B708F1D217A045D002B3B6C /* Main.storyboard */,
-				4B708F20217A045E002B3B6C /* Assets.xcassets */,
-				4B708F22217A045E002B3B6C /* LaunchScreen.storyboard */,
+				4B708F2B217A0741002B3B6C /* Resources */,
 				4B708F25217A045E002B3B6C /* Info.plist */,
 			);
 			path = Concentration;
+			sourceTree = "<group>";
+		};
+		4B708F2B217A0741002B3B6C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B708F20217A045E002B3B6C /* Assets.xcassets */,
+				4B708F22217A045E002B3B6C /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
