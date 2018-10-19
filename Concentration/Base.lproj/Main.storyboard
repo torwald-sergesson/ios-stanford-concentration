@@ -79,9 +79,9 @@
                     <connections>
                         <outlet property="flipCountLabel" destination="ecM-63-gvP" id="Znc-iM-Yv3"/>
                         <outletCollection property="cardButtons" destination="WeS-Gh-MPU" collectionClass="NSMutableArray" id="8FV-fo-XWw"/>
-                        <outletCollection property="cardButtons" destination="p2m-Xk-64b" collectionClass="NSMutableArray" id="6V0-CO-vCE"/>
                         <outletCollection property="cardButtons" destination="aH9-Cq-3o7" collectionClass="NSMutableArray" id="jvf-g2-MS0"/>
                         <outletCollection property="cardButtons" destination="2sJ-p0-4hB" collectionClass="NSMutableArray" id="Xnz-qW-x9Q"/>
+                        <outletCollection property="cardButtons" destination="p2m-Xk-64b" collectionClass="NSMutableArray" id="CQh-in-O2B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

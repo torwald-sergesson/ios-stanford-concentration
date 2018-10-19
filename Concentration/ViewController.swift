@@ -21,8 +21,20 @@ class ViewController: UIViewController
 
     @IBOutlet var cardButtons: [UIButton]!
     
+    var emojiChoices = [
+        "☪︎", "♱",
+        "☘︎", "☯︎",
+        "♱", "☪︎",
+        "☘︎", "☯︎",
+    ]
+    
     @IBAction func touchCard(_ sender: UIButton) {
-        flipCard(withEmoji: "☆", on: sender)
+        flipCount += 1
+        if let cardNum = cardButtons.index(of: sender) {
+            flipCard(withEmoji: emojiChoices[cardNum], on: sender)
+        } else {
+            print("Card not found")
+        }
     }
     
     func flipCard(withEmoji emoji: String, on button: UIButton) {
@@ -30,7 +42,6 @@ class ViewController: UIViewController
             button.setTitle("", for: UIControl.State.normal)
             button.backgroundColor = UIColor.orange
         } else {
-            flipCount += 1
             button.setTitle(emoji, for: UIControl.State.normal)
             button.backgroundColor = UIColor.white
         }
